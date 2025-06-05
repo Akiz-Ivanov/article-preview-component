@@ -78,20 +78,20 @@ Working on this project gave me a deeper understanding of:
 - **Custom Hooks**  
   I created reusable hooks (`useWindowSize`, `usePopoverDismiss`, `usePopoverLayout`) to encapsulate state and logic around resizing, closing behavior (Escape key & outside click), and layout updates.
 
-### 🔄 Continued development
+### Continued development
 
 There are several improvements and refinements I'd like to explore in future iterations of this project:
 
-- 💡 **Refactor positioning system using `transform`**  
+- **Refactor positioning system using `transform`**  
   Currently using `top`/`left` for popover positioning; switching to `transform: translate` will allow for smoother, GPU-accelerated animations.
 
-- ↔️ **Add shift logic**  
+- **Add shift logic**  
   Implementing custom "shift" logic to nudge the popover into view when it's close to the viewport edge—this will work alongside the existing flip behavior for a more robust experience.
 
-- 🔍 **Manual focus management**  
+- **Manual focus management**  
   Remove the dependency on `react-focus-lock` and handle focus trapping and return manually for better understanding and control of accessibility concerns.
 
-- 🎯 **Reusable popover primitives**  
+- **Reusable popover primitives**  
   Consider extracting and abstracting logic into more reusable hooks and components, such as a generalized popover or tooltip system that could be reused across projects.
 
 This challenge served as a great learning opportunity in building popover logic manually
