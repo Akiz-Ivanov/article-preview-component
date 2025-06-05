@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Akiz-Ivanov/intro-component-with-signup-form](https://github.com/Akiz-Ivanov/intro-component-with-signup-form)
-- Live Site URL: [https://akiz-ivanov.github.io/intro-component-with-signup-form/](https://akiz-ivanov.github.io/intro-component-with-signup-form/)
+- Solution URL: [https://github.com/Akiz-Ivanov/article-preview-component](https://github.com/Akiz-Ivanov/article-preview-component)
+- Live Site URL: [https://akiz-ivanov.github.io/article-preview-component/](https://akiz-ivanov.github.io/article-preview-component/)
 
 ## My process
 
