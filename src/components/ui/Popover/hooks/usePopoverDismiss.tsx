@@ -1,13 +1,13 @@
 import { useEffect } from "react"
 
-type Props = {
+type Params = {
     isPopoverOpen: boolean;
     triggerRef: React.RefObject<HTMLElement | null>;
     contentRef: React.RefObject<HTMLElement | null>;
     onClose: () => void;
   };
 
-const usePopoverDismiss = ({ isPopoverOpen, triggerRef, contentRef, onClose }: Props) => {
+const usePopoverDismiss = ({ isPopoverOpen, triggerRef, contentRef, onClose }: Params) => {
     
     useEffect(() => { 
 

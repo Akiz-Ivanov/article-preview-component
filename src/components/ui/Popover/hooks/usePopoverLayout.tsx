@@ -6,7 +6,7 @@ type Size = {
     height: number;
 }
 
-type Props = {
+type Params = {
     variant: 'mobile' | 'desktop';
     isPopoverOpen: boolean;
     popoverRef: React.RefObject<HTMLDivElement | null>;
@@ -15,7 +15,7 @@ type Props = {
     size?: Size;
 }
 
-const usePopoverLayout = ({ variant, isPopoverOpen, popoverRef, buttonRef, arrowRef, size }: Props) => {
+const usePopoverLayout = ({ variant, isPopoverOpen, popoverRef, buttonRef, arrowRef, size }: Params) => {
 
     useEffect(() => {
 
