@@ -22,7 +22,14 @@ export default function SharePopover({ isPopoverOpen, variant, buttonRef, onClos
     const arrowRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
 
     // Handles popover positioning
-    usePopoverLayout({ variant, isPopoverOpen, popoverRef, buttonRef, arrowRef, size });
+    usePopoverLayout({ 
+        variant, 
+        isPopoverOpen, 
+        popoverRef, 
+        buttonRef, 
+        arrowRef, 
+        size 
+    });
 
     // Handles outside click & Escape key behavior
     usePopoverDismiss({
