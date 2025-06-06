@@ -21,6 +21,9 @@ export default function SharePopover({ isPopoverOpen, variant, buttonRef, onClos
     const popoverRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
     const arrowRef: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
 
+    // Handles popover positioning
+    usePopoverLayout({ variant, isPopoverOpen, popoverRef, buttonRef, arrowRef, size });
+
     // Handles outside click & Escape key behavior
     usePopoverDismiss({
         isPopoverOpen,
@@ -29,11 +32,10 @@ export default function SharePopover({ isPopoverOpen, variant, buttonRef, onClos
         onClose,
     });
 
-    usePopoverLayout({ variant, isPopoverOpen, popoverRef, buttonRef, arrowRef, size });
 
     // Styles
     const isMobile: boolean = variant === 'mobile';
-    const baseClasses: string = `absolute md:fixed transform transition-all duration-200 ${isPopoverOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'}`;
+    const baseClasses: string = `absolute md:fixed transform transition-opacity duration-200 ${isPopoverOpen ? 'opacity-100 pointer-events-auto visible' : 'opacity-0 pointer-events-none invisible'}`;
     const mobileClasses: string = `top-0 right-0 size-full bg-very-dark-grayish-blue flex items-center justify-start gap-2 rounded-b-xl md:hidden`;
     const desktopClasses: string = `hidden md:flex w-auto rounded-lg bg-very-dark-grayish-blue text-white shadow-lg p-4 min-w-max ease-in-out`;
 
